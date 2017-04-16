@@ -41,8 +41,9 @@ header {
     bottom: 0px;
     transform: translate(0,100%);
     transition: transform 0.3s ease-out;
-    // the bottom padding is where the toggle-down button rests
-    padding: 0 0 2rem;
+    // add 2rem space on the bottom for the toggle-down button 
+    // and add 2rem because the info-info wrapper top margin pushes the whole thing 2 rem down
+    padding-bottom: 4rem;
     &__toggle-up{
         @include popup__toggle;
         top: -2rem;
@@ -52,7 +53,8 @@ header {
         bottom: 0px;
     }
     &__info-wrapper {
-        margin-top: 2rem;
+        // push info-wrapper 2 rem down so that it rests under header
+        margin: 2rem 0;
         height: 100%;
         overflow-y: scroll;
     }

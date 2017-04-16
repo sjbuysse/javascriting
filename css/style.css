@@ -26,7 +26,7 @@ header {
   bottom: 0px;
   transform: translate(0, 100%);
   transition: transform 0.3s ease-out;
-  padding: 0 0 2rem; }
+  padding-bottom: 4rem; }
   .popup__toggle-up {
     position: absolute;
     background-color: white;
@@ -44,7 +44,7 @@ header {
     right: 0px;
     bottom: 0px; }
   .popup__info-wrapper {
-    margin-top: 2rem;
+    margin: 2rem 0;
     height: 100%;
     overflow-y: scroll; }
 
