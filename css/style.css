@@ -15,8 +15,7 @@ html, body {
   bottom: 0px;
   transform: translate(0, 100%);
   transition: transform 0.3s ease-out;
-  padding-bottom: 2rem;
-  box-sizing: border-box;
+  padding: 2rem 1rem;
   margin-top: 2rem; }
   .popup__toggle-up {
     position: absolute;
@@ -25,7 +24,6 @@ html, body {
     line-height: 2rem;
     text-transform: uppercase;
     right: 0px;
-    border: 1px solid black;
     top: -2rem; }
   .popup__toggle-down {
     position: absolute;
@@ -34,7 +32,6 @@ html, body {
     line-height: 2rem;
     text-transform: uppercase;
     right: 0px;
-    border: 1px solid black;
     bottom: 0px; }
   .popup__info-wrapper {
     height: 100%;

@@ -5,7 +5,6 @@
     line-height: 2rem;
     text-transform: uppercase;
     right: 0px;
-    border: 1px solid black;
 }
 
 html, body {
@@ -27,8 +26,7 @@ html, body {
     bottom: 0px;
     transform: translate(0,100%);
     transition: transform 0.3s ease-out;
-    padding-bottom: 2rem;
-    box-sizing: border-box;
+    padding: 2rem 1rem;
     margin-top: 2rem;
     &__toggle-up{
         @include popup__toggle;

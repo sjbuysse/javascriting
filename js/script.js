@@ -12,7 +12,13 @@ $(document).ready(function(){
         };
         reader.readAsDataURL(file);
     }
-    $('#file').on("change",fileHandler);
+
+    function addImgToInfo() {
+        $("#preview-img").clone().attr('id', '').appendTo('#image-wrapper');
+    }
+
+    $('#file').on("change", fileHandler);
+    $('#submit-img').on('click', addImgToInfo);
 });
 var map;
 function initMap() {
