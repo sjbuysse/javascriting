@@ -1,5 +1,5 @@
 html, body {
-  height: 100vh;
+  height: 100%;
   overflow: hidden; }
 
 header {
@@ -13,7 +13,7 @@ header {
   justify-content: center; }
 
 .background {
-  height: 100vh;
+  height: 100%;
   width: 100%;
   background-color: green;
   padding-top: 2rem; }

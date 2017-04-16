@@ -11,7 +11,7 @@ $gallery: #EEE;
 }
 
 html, body {
-  height: 100vh;
+  height: 100%;
   overflow: hidden;
 }
 
@@ -27,7 +27,7 @@ header {
 }
 
 .background {
-    height: 100vh;
+    height: 100%;
     width: 100%;
     background-color: green;
     padding-top: 2rem;
