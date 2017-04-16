@@ -15,7 +15,8 @@ header {
 .background {
   height: 100vh;
   width: 100%;
-  background-color: green; }
+  background-color: green;
+  padding-top: 2rem; }
 
 .popup {
   box-sizing: border-box;
