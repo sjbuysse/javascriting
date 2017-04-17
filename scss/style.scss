@@ -42,8 +42,6 @@ header {
 
 .drawer {
     @include fullheight;
-    position: absolute;
-    bottom: 0;
     background-color: yellow;
     width: 200px;
     z-index: 3;

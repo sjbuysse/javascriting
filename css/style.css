@@ -26,8 +26,6 @@ header {
   height: 100%;
   /*top: 0;*/
   /*bottom: 0;*/
-  position: absolute;
-  bottom: 0;
   background-color: yellow;
   width: 200px;
   z-index: 3;
