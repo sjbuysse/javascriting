@@ -38,12 +38,13 @@ header {
 }
 
 .drawer {
-    @include fullheight;
+    /*@include fullheight;*/
     background-color: yellow;
     width: 200px;
     position: absolute;
     z-index: 3;
-    top: 0px;
+    top: 0;
+    bottom: 0;
     transform: translate(-200px,0);
     transition: transform 0.3s ease-out;
     &__toggle {
