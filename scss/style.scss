@@ -2,9 +2,10 @@ $mirage: #1C262F;
 $gallery: #EEE;
 
 @mixin fullheight {
-    position: absolute;
-    top: 0;
-    bottom: 0;
+    /*position: absolute;*/
+    height: 100%;
+    /*top: 0;*/
+    /*bottom: 0;*/
 }
 
 @mixin popup__toggle {

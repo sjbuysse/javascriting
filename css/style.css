@@ -13,17 +13,19 @@ header {
   justify-content: center; }
 
 .background {
-  position: absolute;
-  top: 0;
-  bottom: 0;
+  /*position: absolute;*/
+  height: 100%;
+  /*top: 0;*/
+  /*bottom: 0;*/
   width: 100%;
   background-color: green;
   padding-top: 2rem; }
 
 .drawer {
-  position: absolute;
-  top: 0;
-  bottom: 0;
+  /*position: absolute;*/
+  height: 100%;
+  /*top: 0;*/
+  /*bottom: 0;*/
   background-color: yellow;
   width: 200px;
   z-index: 3;
@@ -46,9 +48,10 @@ header {
 
 .popup {
   box-sizing: border-box;
-  position: absolute;
-  top: 0;
-  bottom: 0;
+  /*position: absolute;*/
+  height: 100%;
+  /*top: 0;*/
+  /*bottom: 0;*/
   width: 100%;
   background-color: blue;
   position: absolute;
@@ -73,9 +76,10 @@ header {
     bottom: 0px; }
   .popup__info-wrapper {
     margin: 2rem 0;
-    position: absolute;
-    top: 0;
-    bottom: 0;
+    /*position: absolute;*/
+    height: 100%;
+    /*top: 0;*/
+    /*bottom: 0;*/
     overflow-y: scroll; }
 
 .open {
@@ -88,6 +92,7 @@ header {
 
 #map {
   width: 100%;
-  position: absolute;
-  top: 0;
-  bottom: 0; }
+  /*position: absolute;*/
+  height: 100%;
+  /*top: 0;*/
+  /*bottom: 0;*/ }
