@@ -23,7 +23,7 @@ header {
 .drawer {
   position: absolute;
   top: 0;
-  bottom: 0;
+  height: 110%;
   background-color: yellow;
   width: 200px;
   z-index: 3;

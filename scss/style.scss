@@ -7,6 +7,12 @@ $gallery: #EEE;
     bottom: 0;
 }
 
+@mixin overheight {
+    position: absolute;
+    top: 0;
+    height: 110%;
+}
+
 @mixin popup__toggle {
     position: absolute;
     background-color: white;
@@ -40,7 +46,7 @@ header {
 }
 
 .drawer {
-    @include fullheight;
+    @include overheight;
     background-color: yellow;
     width: 200px;
     z-index: 3;
