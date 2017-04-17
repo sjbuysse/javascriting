@@ -2,10 +2,9 @@ $mirage: #1C262F;
 $gallery: #EEE;
 
 @mixin fullheight {
-    /*position: absolute;*/
-    height: 100%;
-    /*top: 0;*/
-    /*bottom: 0;*/
+    position: absolute;
+    top: 0;
+    bottom: 0;
 }
 
 @mixin popup__toggle {
@@ -48,16 +47,9 @@ header {
     transform: translate(-200px,0);
     transition: transform 0.3s ease-out;
     &__toggle {
-        position: absolute;
-        right: -2rem;
-        width: 2rem;
-        height: 2rem;
-        display: inline-block;
         cursor: pointer;
-    }
-    &__toggle-icon {
         position: absolute;
-        right: 0.4rem;
+        right: -1.8rem;
         top: 0.4rem;
         filter: invert(100%);
         height: 1.2rem;

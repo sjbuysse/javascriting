@@ -13,34 +13,26 @@ header {
   justify-content: center; }
 
 .background {
-  /*position: absolute;*/
-  height: 100%;
-  /*top: 0;*/
-  /*bottom: 0;*/
+  position: absolute;
+  top: 0;
+  bottom: 0;
   width: 100%;
   background-color: green;
   padding-top: 2rem; }
 
 .drawer {
-  /*position: absolute;*/
-  height: 100%;
-  /*top: 0;*/
-  /*bottom: 0;*/
+  position: absolute;
+  top: 0;
+  bottom: 0;
   background-color: yellow;
   width: 200px;
   z-index: 3;
   transform: translate(-200px, 0);
   transition: transform 0.3s ease-out; }
   .drawer__toggle {
+    cursor: pointer;
     position: absolute;
-    right: -2rem;
-    width: 2rem;
-    height: 2rem;
-    display: inline-block;
-    cursor: pointer; }
-  .drawer__toggle-icon {
-    position: absolute;
-    right: 0.4rem;
+    right: -1.8rem;
     top: 0.4rem;
     filter: invert(100%);
     height: 1.2rem;
@@ -48,10 +40,9 @@ header {
 
 .popup {
   box-sizing: border-box;
-  /*position: absolute;*/
-  height: 100%;
-  /*top: 0;*/
-  /*bottom: 0;*/
+  position: absolute;
+  top: 0;
+  bottom: 0;
   width: 100%;
   background-color: blue;
   position: absolute;
@@ -76,10 +67,9 @@ header {
     bottom: 0px; }
   .popup__info-wrapper {
     margin: 2rem 0;
-    /*position: absolute;*/
-    height: 100%;
-    /*top: 0;*/
-    /*bottom: 0;*/
+    position: absolute;
+    top: 0;
+    bottom: 0;
     overflow-y: scroll; }
 
 .open {
@@ -92,7 +82,6 @@ header {
 
 #map {
   width: 100%;
-  /*position: absolute;*/
-  height: 100%;
-  /*top: 0;*/
-  /*bottom: 0;*/ }
+  position: absolute;
+  top: 0;
+  bottom: 0; }
