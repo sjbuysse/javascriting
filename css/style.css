@@ -22,9 +22,10 @@ header {
   padding-top: 2rem; }
 
 .drawer {
+  height: 100vh;
   position: absolute;
   top: 0;
-  height: 110%;
+  bottom: 0;
   background-color: yellow;
   width: 200px;
   z-index: 3;
