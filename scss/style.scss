@@ -47,7 +47,7 @@ header {
     width: 200px;
     z-index: 3;
     position: absolute;
-    bottom: 0;
+    top: 0;
     transform: translate(-200px,0);
     transition: transform 0.3s ease-out;
     &__toggle {
