@@ -4,6 +4,7 @@ $(document).ready(function(){
     $('.drawer__toggle').on('click', openDrawer);
     function popup() {
         $('#popup').toggleClass("open");
+        console.log("sha");
     }
     function openDrawer() {
         $('#drawer').toggleClass("open");
