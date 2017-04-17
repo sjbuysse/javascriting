@@ -1,7 +1,11 @@
 $(document).ready(function(){
     $('.popup__toggle').on('click', popup);
+    $('.drawer__toggle').on('click', openDrawer);
     function popup() {
         $('#popup').toggleClass("open");
+    }
+    function openDrawer() {
+        $('#drawer').toggleClass("open");
     }
     function fileHandler(event){
         var file = event.target.files[0]; //event.target references the object that dispatched the event (so here it is the input element)
