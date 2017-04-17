@@ -2,7 +2,6 @@ $mirage: #1C262F;
 $gallery: #EEE;
 
 @mixin fullheight {
-    height: 100vh;
     position: absolute;
     top: 0;
     bottom: 0;
@@ -18,7 +17,7 @@ $gallery: #EEE;
 }
 
 html, body {
-    height: 100vh;
+    height: 100%;
     overflow: hidden;
 }
 
