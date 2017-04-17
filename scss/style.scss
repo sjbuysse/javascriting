@@ -2,9 +2,7 @@ $mirage: #1C262F;
 $gallery: #EEE;
 
 @mixin fullheight {
-    position: absolute;
-    top: 0;
-    bottom: 0;
+    height: 100%;
 }
 
 @mixin popup__toggle {
@@ -17,7 +15,7 @@ $gallery: #EEE;
 }
 
 html, body {
-    height: 100%;
+    @include fullheight;
     overflow: hidden;
 }
 
@@ -43,7 +41,9 @@ header {
     @include fullheight;
     background-color: yellow;
     width: 200px;
+    position: absolute;
     z-index: 3;
+    top: 0px;
     transform: translate(-200px,0);
     transition: transform 0.3s ease-out;
     &__toggle {
@@ -64,6 +64,7 @@ header {
     width: 100%;
     background-color: blue;
     position: absolute;
+    bottom: 0px;
     transform: translate(0,100%);
     transition: transform 0.3s ease-out;
     // add 2rem space on the bottom for the toggle-down button 
