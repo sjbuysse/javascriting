@@ -3,7 +3,7 @@ html, body {
   overflow: hidden; }
 
 header {
-  height: 2rem;
+  height: 32px;
   width: 100%;
   background-color: #1C262F;
   position: absolute;
@@ -16,25 +16,33 @@ header {
   height: 100%;
   width: 100%;
   background-color: green;
-  padding-top: 2rem; }
+  padding-top: 32px; }
 
-.drawer {
+.filter-drawer {
   height: 100vh;
-  background-color: yellow;
+  text-align: left;
+  color: #EEE;
   width: 200px;
-  z-index: 3;
+  background-color: #1C262F;
   position: absolute;
   top: 0;
-  transform: translate(-200px, 0);
-  transition: transform 0.3s ease-out; }
-  .drawer__toggle {
+  transition: transform 0.3s ease-out;
+  z-index: 2;
+  transform: translate(-200px, 0); }
+  .filter-drawer--open {
+    transform: translate(0, 0);
+    transition: transform 0.3s ease-out; }
+  .filter-drawer__list {
+    height: 300px;
+    overflow-y: scroll; }
+  .filter-drawer__toggle {
     position: absolute;
-    right: -2rem;
-    width: 2rem;
-    height: 2rem;
+    right: -32px;
+    width: 32px;
+    height: 32px;
     display: inline-block;
     cursor: pointer; }
-  .drawer__toggle-icon {
+  .filter-drawer__toggle-icon {
     position: absolute;
     right: 0.4rem;
     top: 0.4rem;
@@ -52,6 +60,9 @@ header {
   transform: translate(0, 100%);
   transition: transform 0.3s ease-out;
   padding-bottom: 4rem; }
+  .popup--open {
+    transform: translate(0, 0);
+    transition: transform 0.3s ease-out; }
   .popup__toggle-up {
     position: absolute;
     background-color: white;
@@ -73,14 +84,11 @@ header {
     height: 100%;
     overflow-y: scroll; }
 
-.open {
-  transform: translate(0, 0);
-  transition: transform 0.3s ease-out; }
-
 .preview-img {
   max-width: 200px;
   max-height: 200px; }
 
 #map {
   width: 100%;
-  height: 100%; }
+  height: 100%;
+  padding-top: 32px; }

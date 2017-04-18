@@ -1,5 +1,6 @@
 $mirage: #1C262F;
 $gallery: #EEE;
+$headerHeight: 32px;
 
 @mixin fullHeight {
     height: 100%;
@@ -7,6 +8,40 @@ $gallery: #EEE;
 
 @mixin viewportHeight {
     height: 100vh;
+}
+
+@mixin button {
+    padding: 1px 6px;
+    box-sizing: border-box;
+    text-transform: uppercase;
+    text-align: left;
+    outline: none;
+}
+@mixin drawer-button {
+    @include button;
+    color: $gallery;
+    line-height: $headerHeight;
+    height: $headerHeight;
+    background-color: $mirage;
+    border: 1px solid $gallery;
+    outline: none;
+}
+
+@mixin full-width-drawer-button{
+    @include drawer-button;
+    width: 100%;
+}
+
+@mixin drawers {
+    @include viewportHeight;
+    text-align: left;
+    color: $gallery;
+    width: 200px;
+    background-color: $mirage;
+    position: absolute;
+    top: 0;
+    transition: transform 0.3s ease-out;
+    z-index: 2;
 }
 
 @mixin popup__toggle {
@@ -24,7 +59,7 @@ html, body {
 }
 
 header {
-    height: 2rem;
+    height: $headerHeight;
     width: 100%;
     background-color: $mirage;
     position: absolute;
@@ -38,23 +73,25 @@ header {
     @include fullHeight;
     width: 100%;
     background-color: green;
-    padding-top: 2rem;
+    padding-top: $headerHeight;
 }
 
-.drawer {
-    @include viewportHeight;
-    background-color: yellow;
-    width: 200px;
-    z-index: 3;
-    position: absolute;
-    top: 0;
+.filter-drawer {
+    @include drawers;
     transform: translate(-200px,0);
-    transition: transform 0.3s ease-out;
+    &--open {
+        transform: translate(0, 0);
+        transition: transform 0.3s ease-out;
+    }
+    &__list{
+        height: 300px;
+        overflow-y: scroll;
+    }
     &__toggle {
         position: absolute;
-        right: -2rem;
-        width: 2rem;
-        height: 2rem;
+        right: -$headerHeight;
+        width: $headerHeight;
+        height: $headerHeight;
         display: inline-block;
         cursor: pointer;
     }
@@ -81,6 +118,10 @@ header {
     // add 2rem space on the bottom for the toggle-down button 
     // and add 2rem because the info-info wrapper top margin pushes the whole thing 2 rem down
     padding-bottom: 4rem;
+    &--open {
+        transform: translate(0, 0);
+        transition: transform 0.3s ease-out;
+    }
     &__toggle-up{
         @include popup__toggle;
         top: -2rem;
@@ -96,10 +137,6 @@ header {
         overflow-y: scroll;
     }
 }
-.open {
-    transform: translate(0, 0);
-    transition: transform 0.3s ease-out;
-}
 
 .preview-img {
     max-width: 200px;
@@ -109,4 +146,5 @@ header {
 #map {
     width: 100%;
     @include fullHeight;
+    padding-top: $headerHeight;
 }
