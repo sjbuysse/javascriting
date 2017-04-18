@@ -39,35 +39,52 @@
     <span class="filter-drawer__toggle">
         <svg class="filter-drawer__toggle-icon"><use xlink:href="#icon-filter"></use></svg>
     </span>
-    <ul class="filter-drawer__list">
-        <li>Shi</li>
-        <li>Shisha</li>
-        <li>Sha</li>
-        <li>Shi</li>
-        <li>Shi</li>
-        <li>Shi</li>
-        <li>Shi</li>
-        <li>Shi</li>
-        <li>Shi</li>
-        <li>Shi</li>
-        <li>Shi</li>
-        <li>Shisha</li>
-        <li>Sha</li>
-        <li>Shisha</li>
-        <li>Sha</li>
-        <li>Shisha</li>
-        <li>Sha</li>
-        <li>Shisha</li>
-        <li>Sha</li>
-        <li>Shisha</li>
-        <li>Sha</li>
-        <li>Shisha</li>
-        <li>Sha</li>
-        <li>Shisha</li>
-        <li>Sha</li>
-        <li>Shisha</li>
-        <li>Sha</li>
+    <input class="filter-drawer__searchbox" placeholder="Search for a place"></input>
+    <ul class="filter-drawer__list" id="filter-list">
+        <li class="filter-drawer__list__item">Shi</li>
+        <li class="filter-drawer__list__item">Shisha</li>
+        <li class="filter-drawer__list__item">Sha</li>
+        <li class="filter-drawer__list__item">Shi</li>
+        <li class="filter-drawer__list__item">Shi</li>
+        <li class="filter-drawer__list__item">Shi</li>
+        <li class="filter-drawer__list__item">Shi</li>
+        <li class="filter-drawer__list__item">Shi</li>
+        <li class="filter-drawer__list__item">Shi</li>
+        <li class="filter-drawer__list__item">Shi</li>
+        <li class="filter-drawer__list__item">Shisha</li>
+        <li class="filter-drawer__list__item">Sha</li>
+        <li class="filter-drawer__list__item">Shi</li>
+        <li class="filter-drawer__list__item">Shisha</li>
+        <li class="filter-drawer__list__item">Sha</li>
+        <li class="filter-drawer__list__item">Shi</li>
+        <li class="filter-drawer__list__item">Shisha</li>
+        <li class="filter-drawer__list__item">Sha</li>
+        <li class="filter-drawer__list__item">Shi</li>
+        <li class="filter-drawer__list__item">Shisha</li>
+        <li class="filter-drawer__list__item">Sha</li>
+        <li class="filter-drawer__list__item">Shi</li>
+        <li class="filter-drawer__list__item">Shisha</li>
+        <li class="filter-drawer__list__item">Sha</li>
+        <li class="filter-drawer__list__item">Shi</li>
+        <li class="filter-drawer__list__item">Shisha</li>
+        <li class="filter-drawer__list__item">Sha</li>
+        <li class="filter-drawer__list__item">Shi</li>
+        <li class="filter-drawer__list__item">Shisha</li>
+        <li class="filter-drawer__list__item">Sha</li>
+        <li class="filter-drawer__list__item">Shi</li>
+        <li class="filter-drawer__list__item">Shisha</li>
+        <li class="filter-drawer__list__item">Sha</li>
+        <li class="filter-drawer__list__item">Shi</li>
+        <li class="filter-drawer__list__item">keis</li>
+        <li class="filter-drawer__list__item">keis</li>
+        <li class="filter-drawer__list__item">keis</li>
+        <li class="filter-drawer__list__item">hesp</li>
+        <li class="filter-drawer__list__item">hesp</li>
+        <li class="filter-drawer__list__item">heps</li>
     </ul>
+    <button class="filter-drawer__export-btn">Export locations</button>
+    <input type="file" name="file" id="file" class="filter-drawer__import-input"/>
+    <label for="file" class="filter-drawer__import-btn">Import locations</label>
 </div>
 <div class="popup" id="popup">
     <div class="popup__toggle popup__toggle-up">Pop Up!</div>
@@ -94,6 +111,7 @@ Interdum et malesuada fames ac ante ipsum primis in faucibus. Duis massa mauris,
     <!--<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')</script>-->
     <script src="js/vendor/jquery-1.12.0.min.js"></script>
     <script src="js/script.js"></script>
+    <script src="js/setListHeight.js"></script>
     </body>
     <!--<script async defer-->
         <!--src=-->
