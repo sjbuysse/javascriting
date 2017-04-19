@@ -180,14 +180,14 @@ header {
         cursor: pointer;
         // plus sign when create drawer is closed
         &:after{
-            content: '\2795';
+            content: '+';
             position: absolute;
             font-size: $headerHeight;
             line-height: $headerHeight;
         }
         // minus sign when create drawer is open
         .create-drawer--open &:after {
-            content: '\2796';
+            content: '\2212';
         }
     }
     &--open {

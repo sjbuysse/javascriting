@@ -119,12 +119,12 @@ header {
     color: #FFF;
     cursor: pointer; }
     .create-drawer__toggle:after {
-      content: '\2795';
+      content: '+';
       position: absolute;
       font-size: 32px;
       line-height: 32px; }
     .create-drawer--open .create-drawer__toggle:after {
-      content: '\2796'; }
+      content: '\2212'; }
   .create-drawer--open {
     transform: translate(0);
     -webkit-transform: translate(0);
