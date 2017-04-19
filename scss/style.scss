@@ -178,11 +178,16 @@ header {
         display: inline-block;
         color: #FFF;
         cursor: pointer;
-    }
-    &__toggle-icon {
-        // add plus sign
-        .create-drawer--open & {
-            // add minus sign
+        // plus sign when create drawer is closed
+        &:after{
+            content: '\2795';
+            position: absolute;
+            font-size: $headerHeight;
+            line-height: $headerHeight;
+        }
+        // minus sign when create drawer is open
+        .create-drawer--open &:after {
+            content: '\2796';
         }
     }
     &--open {
