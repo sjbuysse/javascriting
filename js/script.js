@@ -12,6 +12,7 @@ $(document).ready(function(){
         $('#create-drawer').toggleClass("create-drawer--open");
     }
     function fileHandler(event){
+        console.log("keis");
         var file = event.target.files[0]; //event.target references the object that dispatched the event (so here it is the input element)
         var reader = new FileReader();
         reader.onload = function(event){
@@ -25,7 +26,7 @@ $(document).ready(function(){
         $("#preview-img").clone().attr('id', '').appendTo('#image-wrapper');
     }
 
-    $('#file').on("change", fileHandler);
+    $('#popup').on("change", '#file', fileHandler);
     $('#submit-img').on('click', addImgToInfo);
 });
 var map;
