@@ -168,7 +168,7 @@ header {
 .create-drawer {
     @include drawers;
     right: 0; 
-    /*transform: translate(200px);*/
+    transform: translate(200px);
     /*&__toggle {*/
         /*position: absolute;*/
         /*left: -$headerHeight;*/
@@ -190,12 +190,12 @@ header {
             /*content: '\2212';*/
         /*}*/
     /*}*/
-    /*&--open {*/
-        /*transform: translate(0);*/
-        /*-webkit-transform: translate(0);*/
-        /*transition: transform 0.3s ease-out;*/
-        /*-webkit-transition: transform 0.3s ease-out;*/
-    /*}*/
+    &--open {
+        transform: translate(0);
+        -webkit-transform: translate(0);
+        transition: transform 0.3s ease-out;
+        -webkit-transition: transform 0.3s ease-out;
+    }
     /*&__title {*/
         /*text-align: right;*/
         /*padding: 0px 6px;*/
