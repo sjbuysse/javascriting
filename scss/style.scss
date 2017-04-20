@@ -169,27 +169,27 @@ header {
     @include drawers;
     right: 0; 
     transform: translate(200px, 0);
-    /*&__toggle {*/
-        /*position: absolute;*/
-        /*left: -$headerHeight;*/
-        /*top: 0;*/
-        /*width: $headerHeight;*/
-        /*height: $headerHeight;*/
-        /*display: inline-block;*/
-        /*color: #FFF;*/
-        /*cursor: pointer;*/
-        /*// plus sign when create drawer is closed*/
-        /*&:after{*/
-            /*content: '+';*/
-            /*position: absolute;*/
-            /*font-size: $headerHeight;*/
-            /*line-height: $headerHeight;*/
-        /*}*/
-        /*// minus sign when create drawer is open*/
-        /*.create-drawer--open &:after {*/
-            /*content: '\2212';*/
-        /*}*/
-    /*}*/
+    &__toggle {
+        position: absolute;
+        left: -$headerHeight;
+        top: 0;
+        width: $headerHeight;
+        height: $headerHeight;
+        display: inline-block;
+        color: #FFF;
+        cursor: pointer;
+        // plus sign when create drawer is closed
+        &:after{
+            content: '+';
+            position: absolute;
+            font-size: $headerHeight;
+            line-height: $headerHeight;
+        }
+        // minus sign when create drawer is open
+        .create-drawer--open &:after {
+            content: '\2212';
+        }
+    }
     &--open {
         transform: translate(0, 0);
         transition: transform 0.3s ease-out;

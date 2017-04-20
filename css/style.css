@@ -109,27 +109,6 @@ header {
   z-index: 2;
   right: 0;
   transform: translate(200px, 0);
-  /*&__toggle {*/
-  /*position: absolute;*/
-  /*left: -$headerHeight;*/
-  /*top: 0;*/
-  /*width: $headerHeight;*/
-  /*height: $headerHeight;*/
-  /*display: inline-block;*/
-  /*color: #FFF;*/
-  /*cursor: pointer;*/
-  /*// plus sign when create drawer is closed*/
-  /*&:after{*/
-  /*content: '+';*/
-  /*position: absolute;*/
-  /*font-size: $headerHeight;*/
-  /*line-height: $headerHeight;*/
-  /*}*/
-  /*// minus sign when create drawer is open*/
-  /*.create-drawer--open &:after {*/
-  /*content: '\2212';*/
-  /*}*/
-  /*}*/
   /*&__title {*/
   /*text-align: right;*/
   /*padding: 0px 6px;*/
@@ -141,6 +120,22 @@ header {
   /*height: $headerHeight;*/
   /*background-color: $mirage;*/
   /*}*/ }
+  .create-drawer__toggle {
+    position: absolute;
+    left: -32px;
+    top: 0;
+    width: 32px;
+    height: 32px;
+    display: inline-block;
+    color: #FFF;
+    cursor: pointer; }
+    .create-drawer__toggle:after {
+      content: '+';
+      position: absolute;
+      font-size: 32px;
+      line-height: 32px; }
+    .create-drawer--open .create-drawer__toggle:after {
+      content: '\2212'; }
   .create-drawer--open {
     transform: translate(0, 0);
     transition: transform 0.3s ease-out; }
