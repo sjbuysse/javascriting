@@ -108,7 +108,7 @@ header {
   transition: transform 0.3s ease-out;
   z-index: 2;
   right: 0;
-  transform: translate(200px);
+  transform: translate(200px, 0);
   /*&__toggle {*/
   /*position: absolute;*/
   /*left: -$headerHeight;*/
@@ -142,10 +142,8 @@ header {
   /*background-color: $mirage;*/
   /*}*/ }
   .create-drawer--open {
-    transform: translate(0);
-    -webkit-transform: translate(0);
-    transition: transform 0.3s ease-out;
-    -webkit-transition: transform 0.3s ease-out; }
+    transform: translate(0, 0);
+    transition: transform 0.3s ease-out; }
 
 .location-form {
   margin: 0px 6px; }
