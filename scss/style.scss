@@ -194,17 +194,17 @@ header {
         transform: translate(0, 0);
         transition: transform 0.3s ease-out;
     }
-    /*&__title {*/
-        /*text-align: right;*/
-        /*padding: 0px 6px;*/
-        /*box-sizing: border-box;*/
-        /*display: block;*/
-        /*text-transform: uppercase;*/
-        /*line-height: $headerHeight;*/
-        /*width: 100%;*/
-        /*height: $headerHeight;*/
-        /*background-color: $mirage;*/
-    /*}*/
+    &__title {
+        text-align: right;
+        padding: 0px 6px;
+        box-sizing: border-box;
+        display: block;
+        text-transform: uppercase;
+        line-height: $headerHeight;
+        width: 100%;
+        height: $headerHeight;
+        background-color: $mirage;
+    }
 }
 
 .location-form {
@@ -260,5 +260,5 @@ header {
 #map {
     width: 100%;
     @include fullHeight;
-    padding-top: $headerHeight;
+    margin-top: $headerHeight;
 }
