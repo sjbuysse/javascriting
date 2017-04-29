@@ -97,71 +97,6 @@ header {
     height: 1.2rem;
     width: 1.2rem; }
 
-.create-drawer {
-  height: 100vh;
-  text-align: left;
-  color: #EEE;
-  width: 200px;
-  background-color: #1C262F;
-  position: absolute;
-  top: 0;
-  transition: transform 0.3s ease-out;
-  z-index: 2;
-  right: 0;
-  transform: translate(200px, 0); }
-  .create-drawer__toggle {
-    position: absolute;
-    left: -32px;
-    top: 0;
-    width: 32px;
-    height: 32px;
-    display: inline-block;
-    color: #FFF;
-    cursor: pointer; }
-    .create-drawer__toggle:after {
-      content: '+';
-      position: absolute;
-      font-size: 32px;
-      line-height: 32px; }
-    .create-drawer--open .create-drawer__toggle:after {
-      content: '\2212'; }
-  .create-drawer--open {
-    transform: translate(0, 0);
-    transition: transform 0.3s ease-out; }
-  .create-drawer__title {
-    text-align: right;
-    padding: 0px 6px;
-    box-sizing: border-box;
-    display: block;
-    text-transform: uppercase;
-    line-height: 32px;
-    width: 100%;
-    height: 32px;
-    background-color: #1C262F; }
-
-.location-form {
-  margin: 0px 6px; }
-  .location-form__name, .location-form__info {
-    color: #222;
-    box-sizing: border-box;
-    width: 188px; }
-  .location-form__info {
-    height: 10rem; }
-  .location-form__submit {
-    padding: 1px 6px;
-    box-sizing: border-box;
-    text-transform: uppercase;
-    text-align: left;
-    outline: none;
-    cursor: pointer;
-    color: #EEE;
-    line-height: 32px;
-    height: 32px;
-    background-color: #1C262F;
-    border: 1px solid #EEE;
-    outline: none;
-    width: 100%; }
-
 .popup {
   box-sizing: border-box;
   height: 100%;
@@ -171,7 +106,7 @@ header {
   bottom: 0;
   transform: translate(0, 100%);
   transition: transform 0.3s ease-out;
-  padding-bottom: 2rem; }
+  padding-bottom: 4rem; }
   .popup--open {
     transform: translate(0, 0);
     transition: transform 0.3s ease-out; }
@@ -192,38 +127,9 @@ header {
     right: 0px;
     bottom: 0px; }
   .popup__info-wrapper {
-    margin: 2rem 0 0;
+    margin: 2rem 0;
     height: 100%;
     overflow-y: scroll; }
-
-.info {
-  box-sizing: border-box;
-  margin-top: 2rem;
-  padding: 0 10px;
-  height: 400px;
-  width: 100%;
-  overflow-y: scroll;
-  display: flex;
-  flex-wrap: wrap;
-  align-content: flex-start; }
-  .info::-webkit-scrollbar {
-    width: 8px;
-    right: 10px; }
-  .info::-webkit-scrollbar-thumb {
-    background-color: rgba(200, 200, 200, 0.85); }
-  .info__name, .info__latlng, .info__name--edit {
-    width: 100%;
-    text-align: center; }
-  .info__name, .info__name--edit {
-    text-transform: uppercase;
-    font-size: 1.2rem;
-    padding: 0.4rem 0 0;
-    font-weight: bold; }
-  .info__details {
-    width: 100%; }
-  .info__details--edit {
-    width: 100%;
-    height: 40%; }
 
 .preview-img {
   max-width: 200px;
@@ -232,4 +138,4 @@ header {
 #map {
   width: 100%;
   height: 100%;
-  margin-top: 32px; }
+  padding-top: 32px; }

@@ -6,7 +6,7 @@
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/main.css">
         <link rel="stylesheet" href="css/style.css">
-        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=0">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
         <!-- Place favicon.ico in the root directory -->
@@ -31,10 +31,10 @@
 
 
     <header></header>
-<div id="map"></div>
-<!--<div class="background">-->
-    <!--Kaasjes-->
-<!--</div>-->
+<!--<div id="map"></div>-->
+<div class="background">
+    Kaasjes
+</div>
 <div id="filter-drawer" class="filter-drawer">
     <span class="filter-drawer__toggle">
         <svg class="filter-drawer__toggle-icon"><use xlink:href="#icon-filter"></use></svg>
@@ -86,38 +86,24 @@
     <input type="file" name="file" id="file" class="filter-drawer__import-input"/>
     <label for="file" class="filter-drawer__import-btn">Import locations</label>
 </div>
-<div id="create-drawer" class="create-drawer">
-    <span class="create-drawer__toggle">
-    </span>
-    <span class="create-drawer__title">Add Location</span>
-    <form class="create-drawer__form location-form">
-        <input class="location-form__name" placeholder="Name"></input>
-        <textarea class="location-form__info" placeholder="Write down some information about your session at this spot"></textarea>
-        <button type="submit" class="location-form__submit">Pin to center</button>
-        <p>When you submit this form, a green pin will be added to the center of the map. You can then drag it to its correct location.</p>
-    </form>
-</div>
 <div class="popup" id="popup">
     <div class="popup__toggle popup__toggle-up">Pop Up!</div>
-    <!--<div class="popup__toggle popup__toggle-down">Pop Down!</div>-->
-        <div class="popup__info-wrapper info" id="info-wrapper">
-            <label class="info__name">info__name</label> 
-            <input class='info__name--edit'></input>
-            <label class="info__latlng">lat: <span></span></label> 
-            <label class="info__latlng">lng: <span></span> </label>
-            <p class="info__details" >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eleifend dui at ex gravida blandit. Maecenas et diam sapien. Phasellus in aliquet nunc, in molestie metus. In commodo eget lacus sit amet gravida. In sagittis orci ut sem cursus porttitor. Aenean eget hendrerit odio, in dictum nunc. Fusce vulputate venenatis orci, eu dictum lectus dignissim eu. Suspendisse tellus eros, condimentum eu libero eu, vehicula mattis ligula. Nullam at massa risus. Pellentesque finibus ex in lorem fermentum, vitae lobortis erat volutpat. Duis sed eros vitae enim aliquam mattis.
+    <div class="popup__toggle popup__toggle-down">Pop Down!</div>
+        <div class="popup__info-wrapper info">
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras commodo vulputate imperdiet. In hac habitasse platea dictumst. Sed aliquam leo id tellus varius blandit. Vivamus ut tellus at massa luctus accumsan. Nam venenatis libero enim, sit amet iaculis diam lacinia vitae. Nullam ullamcorper lectus at elit suscipit consectetur. Sed sodales neque non ante dapibus, sed efficitur neque sagittis. Morbi vitae nulla lorem. Suspendisse ut odio eu diam interdum rutrum. Nullam tincidunt, elit nec suscipit dignissim, lacus elit fringilla nibh, ac hendrerit mauris est et ante. Pellentesque eget elementum nunc, sed congue libero. Donec blandit ornare tellus, volutpat sodales velit tincidunt consectetur. Nunc eu nibh volutpat, semper lectus ut, vulputate est. Quisque in porta risus, a cursus nunc.
 
-Maecenas sed ipsum sit amet est sagittis hendrerit non vel turpis. Phasellus porttitor sem vitae tortor sodales tristique. Nam consequat aliquam purus, et auctor justo placerat nec. Curabitur consectetur diam a erat viverra faucibus. Sed euismod risus a nulla facilisis efficitur sit amet in diam. Nullam at lectus est. Nullam iaculis eu ipsum sed consequat. Etiam ac pharetra orci. Fusce lorem nulla, congue vitae dui a, cursus euismod neque. Phasellus vitae erat id odio laoreet porttitor. Nam aliquam laoreet justo id pellentesque. Aenean condimentum mollis lacus, imperdiet mattis sem vulputate non.
+Nulla magna neque, gravida sit amet metus eu, eleifend semper urna. Nam malesuada ante ac lectus volutpat, ac auctor turpis posuere. Nulla vel elit id tellus ultricies eleifend nec id tortor. Duis pellentesque ultrices risus ac ornare. Sed scelerisque erat diam, et hendrerit nunc pulvinar sollicitudin. Ut in mi tortor. Duis in elit porttitor, ultricies libero nec, volutpat quam. Praesent pretium luctus nunc, eget tempus odio pharetra non. Cras ullamcorper mollis velit ut maximus.
 
-Sed mattis augue ante, tincidunt eleifend magna dignissim et. Donec venenatis pellentesque quam ac tristique. Sed vehicula dapibus tempus. Mauris id diam dolor. Quisque tincidunt interdum lectus at euismod. Integer aliquam suscipit ligula ut mollis. Nunc sit amet porta felis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla tincidunt, tellus ut viverra venenatis, elit ex porttitor dui, condimentum condimentum felis nunc eget quam.</p> 
-            <textarea class='info__details--edit'></textarea>
-            <h2 >Images</h2>
-            <br>
-            <div class="image-wrapper" id="image-wrapper"></div>
-            <input id="file" type="file">
-            <img id="preview-img" class="preview-img" src='#' alt="Your image"/>
-            <button id="submit-img">Submit</button>
-            <textarea name="caption" id="image-caption" placeholder="Write some infomation about this image" class="upload-image__caption"></textarea>
+Aliquam eu sodales metus. Duis aliquet lectus mauris, vitae mattis mi viverra sit amet. Ut tincidunt lacinia fringilla. Nulla nec urna a lorem luctus feugiat finibus ultrices massa. Nullam eget lectus dui. Nam facilisis odio non leo viverra, eu convallis dui consectetur. Aenean est nulla, laoreet id augue sed, tempus tristique arcu. Vestibulum vel orci posuere velit pellentesque egestas sed facilisis risus. Quisque justo turpis, rutrum eu commodo eu, porta vitae risus. Pellentesque tempor nibh ornare neque placerat fermentum.
+
+Fusce vel hendrerit est. Phasellus convallis lectus nec leo vulputate, vitae vestibulum neque pulvinar. Nulla tempus ipsum a venenatis tincidunt. Pellentesque sed orci commodo, commodo dui vulputate, commodo enim. Ut tristique porta orci non egestas. Nullam accumsan leo eros, vitae euismod orci dapibus id. Vestibulum non consequat dolor, mattis ultricies erat. Etiam mattis arcu id lectus ullamcorper cursus eget vitae mauris. Phasellus lobortis tellus non tempus pretium. Donec eget turpis vitae eros sodales scelerisque.
+
+Interdum et malesuada fames ac ante ipsum primis in faucibus. Duis massa mauris, placerat cursus lacinia ut, accumsan nec orci. Quisque id diam id felis egestas imperdiet eget nec justo. Curabitur eget elit congue, aliquam erat eget, cursus nulla. Sed suscipit nulla id rutrum malesuada. Maecenas cursus rhoncus dolor, in sodales nibh rhoncus non. Praesent augue est, malesuada quis quam vel, vehicula venenatis nunc. Aliquam libero sapien, bibendum vitae pulvinar in, ultrices id nibh. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nunc fringilla neque massa, vitae ultricies risus accumsan eget. Vestibulum purus enim, semper et luctus nec, lobortis sit amet velit. Nunc bibendum, enim in hendrerit porta, eros dui pretium leo, vel eleifend dui tortor sodales erat. Phasellus et ultricies nulla. Praesent pharetra nulla feugiat aliquet ornare. Curabitur sed dui at nibh scelerisque ullamcorper.
+    <br>
+    <div class="image-wrapper" id="image-wrapper"></div>
+    <input id="file" type="file">
+    <img id="preview-img" class="preview-img" src='#' alt="Your image"/>
+    <button id="submit-img">Submit</button>
         </div>
 </div>
 </div>
@@ -125,11 +111,10 @@ Sed mattis augue ante, tincidunt eleifend magna dignissim et. Donec venenatis pe
     <!--<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')</script>-->
     <script src="js/vendor/jquery-1.12.0.min.js"></script>
     <script src="js/script.js"></script>
-    <script src="js/androidbug.js"></script>
     <script src="js/setListHeight.js"></script>
     </body>
-    <script async defer
-        src=
-        "https://maps.googleapis.com/maps/api/js?libraries=geometry,drawing&key=AIzaSyDatOjMfgbYIs1bJy8oF90D-fmjZF-jIVQ&v=3&callback=initMap">
-    </script>
+    <!--<script async defer-->
+        <!--src=-->
+        <!--"https://maps.googleapis.com/maps/api/js?libraries=geometry,drawing&key=AIzaSyDatOjMfgbYIs1bJy8oF90D-fmjZF-jIVQ&v=3&callback=initMap">-->
+    <!--</script>-->
 </html>

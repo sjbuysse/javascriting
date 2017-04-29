@@ -1,18 +1,13 @@
 $(document).ready(function(){
     $('.popup__toggle').on('click', popup);
-    $('.filter-drawer__toggle').on('click', openFilterDrawer);
-    $('.create-drawer__toggle').on('click', openCreateDrawer);
+    $('.filter-drawer__toggle').on('click', openDrawer);
     function popup() {
         $('#popup').toggleClass("popup--open");
     }
-    function openFilterDrawer() {
+    function openDrawer() {
         $('#filter-drawer').toggleClass("filter-drawer--open");
     }
-    function openCreateDrawer() {
-        $('#create-drawer').toggleClass("create-drawer--open");
-    }
     function fileHandler(event){
-        console.log("keis");
         var file = event.target.files[0]; //event.target references the object that dispatched the event (so here it is the input element)
         var reader = new FileReader();
         reader.onload = function(event){
@@ -26,7 +21,7 @@ $(document).ready(function(){
         $("#preview-img").clone().attr('id', '').appendTo('#image-wrapper');
     }
 
-    $('#popup').on("change", '#file', fileHandler);
+    $('#file').on("change", fileHandler);
     $('#submit-img').on('click', addImgToInfo);
 });
 var map;
