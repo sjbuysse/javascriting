@@ -169,44 +169,44 @@ header {
     @include drawers;
     right: 0; 
     transform: translate(200px, 0);
-    &__toggle {
-        position: absolute;
-        left: -$headerHeight;
-        top: 0;
-        width: $headerHeight;
-        height: $headerHeight;
-        display: inline-block;
-        color: #FFF;
-        cursor: pointer;
-        // plus sign when create drawer is closed
-        &:after{
-            content: '+';
-            position: absolute;
-            font-size: $headerHeight;
-            line-height: $headerHeight;
-        }
-        // minus sign when create drawer is open
-        .create-drawer--open &:after {
-            content: '\2212';
-        }
-    }
-    &--open {
-        transform: translate(0, 0);
-        -webkit-transform: translate(0, 0);
-        transition: transform 0.3s ease-out;
-        -webkit-transition: transform 0.3s ease-out;
-    }
-    &__title {
-        text-align: right;
-        padding: 0px 6px;
-        box-sizing: border-box;
-        display: block;
-        text-transform: uppercase;
-        line-height: $headerHeight;
-        width: 100%;
-        height: $headerHeight;
-        background-color: $mirage;
-    }
+    /*&__toggle {*/
+        /*position: absolute;*/
+        /*left: -$headerHeight;*/
+        /*top: 0;*/
+        /*width: $headerHeight;*/
+        /*height: $headerHeight;*/
+        /*display: inline-block;*/
+        /*color: #FFF;*/
+        /*cursor: pointer;*/
+        /*// plus sign when create drawer is closed*/
+        /*&:after{*/
+            /*content: '+';*/
+            /*position: absolute;*/
+            /*font-size: $headerHeight;*/
+            /*line-height: $headerHeight;*/
+        /*}*/
+        /*// minus sign when create drawer is open*/
+        /*.create-drawer--open &:after {*/
+            /*content: '\2212';*/
+        /*}*/
+    /*}*/
+    /*&--open {*/
+        /*transform: translate(0, 0);*/
+        /*-webkit-transform: translate(0, 0);*/
+        /*transition: transform 0.3s ease-out;*/
+        /*-webkit-transition: transform 0.3s ease-out;*/
+    /*}*/
+    /*&__title {*/
+        /*text-align: right;*/
+        /*padding: 0px 6px;*/
+        /*box-sizing: border-box;*/
+        /*display: block;*/
+        /*text-transform: uppercase;*/
+        /*line-height: $headerHeight;*/
+        /*width: 100%;*/
+        /*height: $headerHeight;*/
+        /*background-color: $mirage;*/
+    /*}*/
 }
 
 .location-form {
