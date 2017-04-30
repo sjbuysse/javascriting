@@ -25,8 +25,8 @@ $(document).ready(function(){
         $("#preview-img").clone().attr('id', '').appendTo('#image-wrapper');
     }
 
-    $('#file').on("change", fileHandler);
-    $('#submit-img').on('click', addImgToInfo);
+    $('.info').on("change", '#file', fileHandler);
+    $('.info').on('click', '#submit-img', addImgToInfo);
 });
 var map;
 function initMap() {
