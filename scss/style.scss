@@ -27,6 +27,7 @@ $headerHeight: 32px;
     outline: none;
     cursor: pointer;
 }
+
 @mixin drawer-button {
     @include button;
     color: $gallery;
