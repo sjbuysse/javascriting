@@ -24,7 +24,7 @@ header {
   color: #EEE;
   width: 200px;
   background-color: #1C262F;
-  position: absolute;
+  /*position: absolute;*/
   top: 0;
   transition: transform 0.3s ease-out;
   z-index: 2;
@@ -98,7 +98,15 @@ header {
     width: 1.2rem; }
 
 .create-drawer {
-  /*@include drawers;*/
+  height: 100vh;
+  text-align: left;
+  color: #EEE;
+  width: 200px;
+  background-color: #1C262F;
+  /*position: absolute;*/
+  top: 0;
+  transition: transform 0.3s ease-out;
+  z-index: 2;
   right: 0;
   transform: translate(200px, 0); }
   .create-drawer__toggle {
