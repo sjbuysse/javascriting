@@ -23,7 +23,9 @@ $(document).ready(function(){
     }
 
     function addImgToInfo() {
+        var $newCaption = $('<textarea style="height: 10rem;" />');
         $("#previewImg").clone().attr('id', '').appendTo('#image-wrapper');
+        $newCaption.clone().appendTo('#image-wrapper');
     }
 
     $('.info').on("change", '#imageFile', fileHandler);
