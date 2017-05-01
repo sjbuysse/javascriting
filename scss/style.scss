@@ -2,21 +2,21 @@ $mirage: #1C262F;
 $gallery: #EEE;
 $headerHeight: 32px;
 
+@mixin hide-input{
+    width: 0.1px;
+    height: 0.1px;
+    opacity: 0;
+    overflow: hidden;
+    /*position: absolute;*/
+    left: -500px;
+}
+
 @mixin fullHeight {
     height: 100%;
 }
 
 @mixin viewportHeight {
     height: 100vh;
-}
-
-@mixin hide-input{
-    width: 0.1px;
-    height: 0.1px;
-    opacity: 0;
-    overflow: hidden;
-    position: absolute;
-    z-index: -1;
 }
 
 @mixin button {
@@ -85,6 +85,10 @@ header {
     top: 0;
     display: flex;
     justify-content: center;
+}
+
+.line-break {
+    width: 100%;
 }
 
 .background {
@@ -263,6 +267,33 @@ header {
         margin: 2rem 0;
         @include fullHeight;
         overflow-y: scroll;
+    }
+}
+
+.upload-image {
+    display: flex;
+    position: relative;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    &__input {
+        @include hide-input;
+    }
+    &__upload-btn, &__select-btn {
+        @include button;
+        align-self: flex-start;
+        display: inline-block;
+        border: 1px solid $mirage;
+        padding: 0.3rem;
+        margin: 1rem 0;
+        border-radius: 4px;
+    }
+    &__image {
+        align-self: flex-start;
+        max-width: 45%;
+    }
+    &__caption {
+        width: 45%;
+        height: 7rem;
     }
 }
 

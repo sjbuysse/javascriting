@@ -12,21 +12,22 @@ $(document).ready(function(){
         $('#create-drawer').toggleClass("create-drawer--open");
     }
     function fileHandler(event){
+        console.log("image read");
         var file = event.target.files[0]; //event.target references the object that dispatched the event (so here it is the input element)
         var reader = new FileReader();
         reader.onload = function(event){
             var data = event.target.result; //again event.target references the object that dispatched the event (here it is reader).
-            $("#preview-img").attr('src', data);
+            $("#previewImg").attr('src', data);
         };
         reader.readAsDataURL(file);
     }
 
     function addImgToInfo() {
-        $("#preview-img").clone().attr('id', '').appendTo('#image-wrapper');
+        $("#previewImg").clone().attr('id', '').appendTo('#image-wrapper');
     }
 
-    $('.info').on("change", '#file', fileHandler);
-    $('.info').on('click', '#submit-img', addImgToInfo);
+    $('.info').on("change", '#imageFile', fileHandler);
+    $('.info').on('click', '#images-upload-btn', addImgToInfo);
 });
 var map;
 function initMap() {
